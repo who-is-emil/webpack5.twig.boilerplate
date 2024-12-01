@@ -1,0 +1,15 @@
+{
+  "title": "index title",
+  "cardTwo": {
+    "title": "cardTwo title",
+    "button": {
+      "text": "button cardTwo text"
+    }
+  },
+  "icon": {
+    "name": "16/cross"
+  },
+  "cardThree": {
+    "title": "cardThree title"
+  }
+}
