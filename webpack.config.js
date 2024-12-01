@@ -288,7 +288,17 @@ module.exports = (env, argv) => {
       rules: [
         {
           test: /\.scss$/,
-          use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+          use: [
+            MiniCssExtractPlugin.loader,
+            'css-loader',
+            'sass-loader',
+            {
+              loader: 'sass-resources-loader',
+              options: {
+                resources: ['./src/scss/vars/index.scss', './src/scss/mixins/index.scss'],
+              },
+            },
+          ],
         },
         {
           test: /\.js$/,
